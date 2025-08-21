@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Open+Sans:wght@400;600;700&display=swap');
+@import "tailwindcss";
+@import "tw-animate-css";
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  /* Shadcn/UI Colors (Dark Theme) */
+  --color-background: #1a1f2e;
+  --color-foreground: #ffffff;
+
+  --color-card: #262b3d;
+  --color-card-foreground: #ffffff;
+
+  --color-popover: #262b3d;
+  --color-popover-foreground: #ffffff;
+
+  --color-primary: #8b5cf6; /* Accent Purple */
+  --color-primary-foreground: #ffffff;
+
+  --color-secondary: #262b3d; /* Card Background */
+  --color-secondary-foreground: #ffffff;
+
+  --color-muted: #6b7280; /* Text Muted */
+  --color-muted-foreground: #9ca3af; /* Text Secondary */
+
+  --color-accent: #8b5cf6; /* Accent Purple */
+  --color-accent-foreground: #ffffff;
+
+  --color-destructive: #ef4444; /* Example destructive, adjust if needed */
+  --color-destructive-foreground: #ffffff;
+
+  --color-border: #374151; /* Border */
+  --color-input: #374151; /* Input border, same as border */
+  --color-ring: #8b5cf6; /* Ring color, same as primary */
+
+  /* Chart colors (placeholders, adjust as needed) */
+  --color-chart-1: #f97316; /* Orange Accent */
+  --color-chart-2: #06b6d4; /* Cyan Accent */
+  --color-chart-3: #8b5cf6; /* Accent Purple */
+  --color-chart-4: #b45309; /* Bronze/Copper */
+  --color-chart-5: #6b7280; /* Text Muted */
+
+  /* Custom Design System Colors */
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #9ca3af;
+  --color-text-muted: #6b7280;
+  --color-accent-purple-dark: #7c3aed;
+  --color-orange-accent: #f97316;
+  --color-bronze-copper: #b45309;
+  --color-cyan-accent: #06b6d4;
+
+  /* Typography */
+  --font-display: "Inter", sans-serif;
+  --font-body: "Open Sans", sans-serif;
+  --font-logo: "Inter", sans-serif; /* Assuming Inter for logo based on visual */
+
+  /* Shadcn/UI Radii (Dark Theme) */
+  --radius-lg: 0.5rem; /* 8px */
+  --radius-md: calc(0.5rem - 2px); /* 6px */
+  --radius-sm: calc(0.5rem - 4px); /* 4px */
+
+  /* Shadcn/UI Animations (Dark Theme) */
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+
+  @keyframes accordion-down {
+    from {
+      height: 0;
+    }
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+    to {
+      height: 0;
+    }
+  }
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-border);
+  }
+}
+
+@layer utilities {
+  body {
+    font-family: var(--font-body);
+  }
+}
+
+@layer base {
+  :root {
+    /* Shadcn/UI CSS Variables (Dark Theme) */
+    --background: var(--color-background);
+    --foreground: var(--color-foreground);
+    --card: var(--color-card);
+    --card-foreground: var(--color-card-foreground);
+    --popover: var(--color-popover);
+    --popover-foreground: var(--color-popover-foreground);
+    --primary: var(--color-primary);
+    --primary-foreground: var(--color-primary-foreground);
+    --secondary: var(--color-secondary);
+    --secondary-foreground: var(--color-secondary-foreground);
+    --muted: var(--color-muted);
+    --muted-foreground: var(--color-muted-foreground);
+    --accent: var(--color-accent);
+    --accent-foreground: var(--color-accent-foreground);
+    --destructive: var(--color-destructive);
+    --destructive-foreground: var(--color-destructive-foreground);
+    --border: var(--color-border);
+    --input: var(--color-input);
+    --ring: var(--color-ring);
+    --chart-1: var(--color-chart-1);
+    --chart-2: var(--color-chart-2);
+    --chart-3: var(--color-chart-3);
+    --chart-4: var(--color-chart-4);
+    --chart-5: var(--color-chart-5);
+    --radius: var(--radius-lg); /* Default radius for shadcn components */
+  }
+
+  /* Base typography and HTML tag styles */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    color: var(--color-text-primary);
+    line-height: 1.2;
+  }
+
+  h1 {
+    font-size: 4.5rem; /* 72px */
+    font-weight: 900;
+    letter-spacing: -0.05em; /* tight */
+  }
+
+  h2 {
+    font-size: 3rem; /* 48px */
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: 1.5rem; /* 24px */
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 1rem; /* 16px */
+    font-weight: 400;
+    color: var(--color-text-secondary);
+  }
+
+  a {
+    color: var(--color-cyan-accent);
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+
+  a:hover {
+    color: var(--color-primary); /* Primary purple for hover */
+  }
+
+  /* Custom font classes */
+  .font-logo {
+    font-family: var(--font-logo);
+    font-size: 1.5rem; /* ~24px */
+    color: var(--color-cyan-accent);
+  }
+
+  .font-hero-subtitle {
+    font-size: 1.125rem; /* 18px */
+    font-weight: 400;
+    letter-spacing: 0.05em; /* wide */
+    text-transform: uppercase;
+    color: var(--color-text-secondary);
+  }
+
+  .font-navigation {
+    font-size: 0.875rem; /* 14px */
+    font-weight: 500;
+    color: var(--color-text-primary);
+    opacity: 0.8;
+  }
+
+  .font-button {
+    font-size: 0.875rem; /* 14px */
+    font-weight: 600;
+    color: var(--color-text-primary);
+  }
+
+  .font-tag {
+    font-size: 0.75rem; /* 12px */
+    font-weight: 500;
+    color: var(--color-text-primary);
+  }
+
+  /* Container class definition */
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem; /* 24px */
+    padding-right: 1.5rem; /* 24px */
+  }
+}
