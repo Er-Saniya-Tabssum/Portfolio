@@ -1,4 +1,3 @@
-
 # Saniya Tabssum – Creative Portfolio
 
 Welcome to my personal portfolio! 🚀
@@ -15,7 +14,9 @@ Hi, I'm Saniya Tabssum—a passionate developer, AI enthusiast, and creative pro
 I believe in the power of code to change lives, and I enjoy collaborating with teams and clients to bring visions to reality. Whether it's a SaaS platform, a chatbot, or a data-driven app, I approach every project with curiosity and creativity.
 
 ## Projects
+
 See the Projects section for details on my work, including:
+
 - AI Podcast Clipper
 - Vibe
 - PrepGenie
@@ -24,6 +25,7 @@ See the Projects section for details on my work, including:
 - More...
 
 ## Contact
+
 Feel free to reach out for freelance opportunities, collaborations, or just to say hi!
 
 - Email: eng.saniyatabssum@gmail.com
@@ -37,6 +39,7 @@ Feel free to reach out for freelance opportunities, collaborations, or just to s
 Thanks for visiting my portfolio!
 
 ---
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started

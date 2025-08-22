@@ -123,10 +123,10 @@ export default function HeroSection() {
       <Header />
       <div className="container relative z-20 flex flex-1 flex-col justify-center text-center pt-32 pb-16">
         <h1 className="font-display text-[72px] leading-none font-black tracking-tighter text-text-primary uppercase ">
-          Deepak Singhal
+          Saniya Tabssum
         </h1>
         <h5 className="font-hero-subtitle mt-6 text-lg tracking-wider uppercase text-text-secondary">
-          Software Engineer · Full-Stack Developer
+          Software Engineer · AI/ML Engineer · Full-Stack Developer
         </h5>
       </div>
       {/* Gradient overlay at bottom for smooth transition */}
