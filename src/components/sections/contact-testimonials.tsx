@@ -18,8 +18,7 @@ const testimonials = [
     companyLink: "https://bootcamp.mic.gov.in/",
     quote:
       "IDE Bootcamp (Innovation, Design and Entrepreneurship Bootcamp) is a national initiative mainly organized by AICTE (All India Council for Technical Education) and Ministry of Education’s Innovation Cell (MIC). The program aims to develop creativity, problem solving, design thinking and entrepreneurship skills among students and teachers. It provides a platform where participants learn how to identify real life problems, design innovative solutions, and present them as workable business or project ideas. In some editions, institutions like DoSEL, CBSE, NCERT, and foundations like Wadhwani Foundation also collaborate to expand the reach. Local universities and colleges host the camps, where participants go through hands-on training,mentoring, teamwork activities and pitching sessions. Overall, IDE Bootcamp builds the entrepreneurial mindset and prepares youth to become future innovators and leaders.",
-    imageUrl:
-      "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/6ae5c08a-b87a-49db-90b7-a0309ad01b49-tamalsen-dev/assets/images/mark_portrait_circle-17.png",
+    imageUrl: "saniya.jpeg",
     bgColor: "bg-primary",
   },
   {
