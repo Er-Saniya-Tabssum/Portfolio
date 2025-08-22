@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
+// Removed problematic eslint-disable for build compatibility
 "use client";
 
 import { useEffect, useState, useRef } from "react";

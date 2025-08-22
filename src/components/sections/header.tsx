@@ -32,7 +32,7 @@ export default function Header() {
                     >
                       {item.id}
                     </span>
-                    <span>// {item.label}</span>
+                    <span>{`// ${item.label}`}</span>
                   </a>
                 </li>
               ))}
