@@ -5,7 +5,7 @@ const WorkIntro = () => {
   return (
     <section
       id="work"
-      className="bg-[#1a191d] text-foreground relative py-[120px]"
+      className="bg-[#1a191d] text-foreground relative py-[10px]"
     >
       {/* Code Background Image */}
       <div
@@ -20,18 +20,29 @@ const WorkIntro = () => {
         <div className="flex flex-col lg:flex-row gap-x-[70px]">
           <div className="lg:w-1/2">
             <h2 className="font-display font-black text-white text-7xl leading-none tracking-tighter">
-              My
-              <br />
-              Work
+              My Work
             </h2>
             <div className="mt-8 space-y-4 max-w-lg">
               <p className="text-text-secondary leading-relaxed">
-                Deployed scalable travel, event and telemedicine web and hybrid
-                mobile apps using React SPA and PWA.
+                I worked as an AI/ML Intern at Edunet Foundation, where I
+                developed an EV Vehicle and Charging Demand Prediction model
+                using Python, Scikit-learn, and TensorFlow (LSTM). My role
+                involved data preprocessing, visualization, and time-series
+                forecasting, which gave me practical exposure to applying AI/ML
+                in the sustainable energy domain.
               </p>
               <p className="text-text-secondary leading-relaxed">
-                Collaborated in 140+ projects with 50+ clients all around the
-                world. I am also interested in data analytics and visualization.
+                Alongside this, I have created impactful projects like
+                DeepTruth, an AI-powered platform to detect AI-generated content
+                and face swaps that won 1st position at IDE Bootcamp 2025, and
+                AI Podcast Clipper SaaS, a production-ready platform for
+                generating viral short-form clips with transcription, speaker
+                recognition, and automated rendering.
+              </p>
+              <p className="text-text-secondary leading-relaxed">
+                Additionally, I hold strong skills in full-stack web development
+                with React, Node.js, Express, and MySQL, enabling me to design
+                secure, scalable, and intelligent solutions.
               </p>
             </div>
           </div>

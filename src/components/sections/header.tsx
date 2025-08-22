@@ -15,7 +15,7 @@ export default function Header() {
       <div className="container">
         <div className="flex justify-between items-center h-24">
           <Link href="/" className="font-logo text-2xl font-bold">
-            TamalSen._
+            Portfolio
           </Link>
 
           <nav className="hidden md:flex">

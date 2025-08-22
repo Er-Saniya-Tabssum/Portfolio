@@ -1,67 +1,87 @@
-import React from 'react';
-import { ArrowRight } from 'lucide-react';
+import React from "react";
+import { ArrowRight } from "lucide-react";
 
 interface Project {
   title: string;
   category: string | null;
   imageUrl: string | null;
   link: string;
+  description?: string;
 }
 
 const projects: Project[] = [
   {
-    title: "Flight Local (B2B Travel Solution)",
-    category: "Web Development",
-    imageUrl: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/6ae5c08a-b87a-49db-90b7-a0309ad01b49-tamalsen-dev/assets/images/flighlocal-cover-image-5.jpg",
-    link: "#",
+    title: "PrepGenie",
+    category: "ai-ml",
+    imageUrl: "/prepgenie.png",
+    link: "https://github.com/devopsdeepaks/prepgenie",
+    description:
+      "AI-based platform for mock interviews, resume generation, and analytics. Tech: React.js, Node.js, MongoDB, OpenAI API.",
   },
   {
-    title: "AI Lab Granada",
-    category: "Web Development",
-    imageUrl: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/6ae5c08a-b87a-49db-90b7-a0309ad01b49/generated_images/modern-web-application-interface-screens-31a5bf8c-20250821192457.jpg",
-    link: "#",
+    title: "AI Podcast Clipper",
+    category: "ai-ml",
+    imageUrl: "/podcastclipper.png",
+    link: "https://github.com/Er-Saniya-Tabssum/Podcast-Clipper",
+    description:
+      "Transforms full-length podcasts into viral short-form clips using advanced AI models for transcription, speaker detection, and video cropping. Tech: Next.js, TypeScript, FastAPI, Modal, Stripe, AWS S3.",
   },
   {
-    title: "Tryotel – Cross-Platform Travel App",
-    category: "Mobile Development",
-    imageUrl: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/6ae5c08a-b87a-49db-90b7-a0309ad01b49-tamalsen-dev/assets/images/tryotel-b2c-cover-11.jpg",
-    link: "#",
+    title: "Vibe",
+    category: "ai-ml",
+    imageUrl: "/vibe.png",
+    link: "https://github.com/Er-Saniya-Tabssum/vibe",
+    description:
+      "Modern Next.js template with advanced UI components, sidebar, charting, and responsive design. Tech: Next.js, TailwindCSS, Radix UI.",
   },
   {
-    title: "Khora – Urban Thinkers Consulting Firm",
-    category: "Web Development",
-    imageUrl: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/6ae5c08a-b87a-49db-90b7-a0309ad01b49/generated_images/modern-consulting-firm-website-interface-a56b544e-20250821192509.jpg",
-    link: "#",
+    title: "EV Vehicle Charging Demand Prediction",
+    category: "ai-ml",
+    imageUrl: "ev.jpeg",
+    link: "https://github.com/Er-Saniya-Tabssum/EV-Vehicle-charging-demand-prediction",
+    description:
+      "Predicts electric vehicle charging demand using machine learning models. Tech: Python, scikit-learn, pandas.",
   },
   {
-    title: "Tapy – Download. Connect. Unlock.",
-    category: "Web Development",
-    imageUrl: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/6ae5c08a-b87a-49db-90b7-a0309ad01b49-tamalsen-dev/assets/images/tapy-co-poster-9.jpg",
-    link: "#",
+    title: "Ai Pdf Chat With Rag",
+    category: "ai-ml",
+    imageUrl: "chatwithrag.jpg",
+    link: "https://github.com/Er-Saniya-Tabssum/AiPdfChatWithRag",
+    description:
+      "Chatbot for PDF documents using Retrieval-Augmented Generation (RAG). Tech: Python, LangChain, OpenAI API.",
   },
   {
-    title: "Walker IP Pty Ltd",
-    category: "Web Development",
-    imageUrl: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/6ae5c08a-b87a-49db-90b7-a0309ad01b49-tamalsen-dev/assets/images/walkerip-com-poster-10.jpg",
-    link: "#",
+    title: "Radar System Using Arduino",
+    category: "ai-ml",
+    imageUrl: "arduino.jpeg",
+    link: "https://github.com/Er-Saniya-Tabssum/Radar-System-Using-Arduino",
+    description:
+      "Object detection radar using ultrasonic sensor and Arduino, visualized in Processing IDE. Tech: Arduino, Processing.",
   },
   {
-    title: "Kananaskis Nordic Spa Website",
-    category: "Web Development",
-    imageUrl: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/6ae5c08a-b87a-49db-90b7-a0309ad01b49/generated_images/luxury-spa-website-interface-showing-nor-e83045e8-20250821192523.jpg",
-    link: "#",
+    title: "Voice-Based Virtual Assistant",
+    category: "ai-ml",
+    imageUrl: "/voice.png",
+    link: "https://github.com/Er-Saniya-Tabssum/-Voice-Based-Virtual-Assistant",
+    description:
+      "Python-based assistant that converts voice commands to text and automates web tasks. Tech: Python, speech_recognition, pywhatkit.",
   },
   {
-    title: "A Higher Thought",
-    category: "Web Development",
-    imageUrl: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/6ae5c08a-b87a-49db-90b7-a0309ad01b49/generated_images/modern-coaching-and-personal-development-8487a965-20250821192535.jpg",
-    link: "#",
+    title: "DeepTruth",
+    category: "ai-ml",
+    imageUrl: "deeptruth.jpeg",
+    link: "https://github.com/Er-Saniya-Tabssum/DeepTruth",
+    description:
+      "AI-powered tool for deepfake and face swap detection, image tracking, and removal assistance. Tech: Python, TensorFlow, OpenCV, Flask.",
   },
+  // ...existing projects...
   {
-    title: "All the roads of Chittagong",
-    category: "Data Visualization",
-    imageUrl: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/6ae5c08a-b87a-49db-90b7-a0309ad01b49-tamalsen-dev/assets/images/all-the-roads-of-chittagong-cover-12.jpg",
-    link: "#",
+    title: "Sangam Frontend",
+    category: "Web-Dev",
+    imageUrl: "/sangam.png",
+    link: "https://github.com/devopsdeepaks/Sangam-frontend",
+    description:
+      "Frontend for Sangam, a collaborative platform. Tech: React.js, TypeScript, Chakra UI.",
   },
 ];
 
@@ -72,8 +92,11 @@ const ProjectCard = ({ project }: { project: Project }) => {
         {project.title}
       </h3>
       {project.category && (
+        <p className="text-sm text-text-secondary mb-2">{project.category}</p>
+      )}
+      {project.description && (
         <p className="text-sm text-text-secondary mb-4">
-          {project.category}
+          {project.description}
         </p>
       )}
       <div className="mt-auto pt-4">
@@ -88,22 +111,37 @@ const ProjectCard = ({ project }: { project: Project }) => {
   return (
     <div className="break-inside-avoid mb-8">
       <a href={project.link} className="block group">
-        {project.imageUrl ? (
-          <div className="relative rounded-lg overflow-hidden shadow-lg shadow-black/20 transition-all duration-300 hover:-translate-y-1 hover:shadow-primary/20">
-            <div
-              className="w-full h-80 bg-cover bg-center transition-transform duration-500 ease-in-out group-hover:scale-105"
-              style={{ backgroundImage: `url(${project.imageUrl})` }}
+        <div className="bg-gradient-to-br from-background via-card to-background border border-border rounded-xl p-6 transition-all duration-300 hover:-translate-y-1 shadow-xl hover:shadow-cyan-500/30 flex flex-col items-center">
+          {project.imageUrl && (
+            <img
+              src={project.imageUrl}
+              alt={project.title}
+              className="mb-6 w-80 h-40 object-cover rounded-lg shadow-md border border-border bg-white"
+              style={{ boxShadow: "0 4px 24px rgba(0,0,0,0.10)" }}
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
-            <div className="absolute inset-0 p-6 flex flex-col justify-end">
-              {cardContent}
+          )}
+          <div className="w-full text-center">
+            <h3 className="font-display text-2xl font-bold text-cyan-400 mb-2 leading-tight group-hover:text-cyan-300 transition-colors duration-300">
+              {project.title}
+            </h3>
+            {/* {project.category && (
+              <p className="text-xs font-semibold uppercase tracking-wide text-cyan-200 mb-3">
+                {project.category}
+              </p>
+            )} */}
+            {project.description && (
+              <p className="text-base text-text-secondary mb-5">
+                {project.description}
+              </p>
+            )}
+            <div className="mt-auto pt-2">
+              <div className="text-cyan-400 font-semibold text-base inline-flex items-center gap-2 hover:underline">
+                Show project
+                <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+              </div>
             </div>
           </div>
-        ) : (
-          <div className="bg-card border border-border rounded-lg p-6 transition-all duration-300 hover:-translate-y-1 shadow-lg shadow-black/20 hover:shadow-primary/20">
-            {cardContent}
-          </div>
-        )}
+        </div>
       </a>
     </div>
   );

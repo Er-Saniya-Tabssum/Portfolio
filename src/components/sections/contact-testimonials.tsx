@@ -12,12 +12,12 @@ const QuoteDoubleIcon = (props: SVGProps<SVGSVGElement>) => (
 
 const testimonials = [
   {
-    name: "Mark Greenspan",
-    title: "Founder at",
-    company: "influenceTHIS Canada",
-    companyLink: "https://influencethis.ca/",
+    name: "IDE BOOTCAMP PHASE 2",
+    title: "Winner",
+    company: "Organized by AICTE & MIC",
+    companyLink: "https://bootcamp.mic.gov.in/",
     quote:
-      "Since 2018 Tamal has been responsible for the development of our website which has been instrumental to the growth of our company. Even while working remotely he’s been highly responsive, organized and strategic in his thinking. In addition to staying on top of day-to-day site changes and builds, he’s provided us with great advice to stay on top of the current changes in web technologies. He’s also implemented effective project management and Q&A processes. As a result Tamal has been an highly valued and impactful member of our team.",
+      "IDE Bootcamp (Innovation, Design and Entrepreneurship Bootcamp) is a national initiative mainly organized by AICTE (All India Council for Technical Education) and Ministry of Education’s Innovation Cell (MIC). The program aims to develop creativity, problem solving, design thinking and entrepreneurship skills among students and teachers. It provides a platform where participants learn how to identify real life problems, design innovative solutions, and present them as workable business or project ideas. In some editions, institutions like DoSEL, CBSE, NCERT, and foundations like Wadhwani Foundation also collaborate to expand the reach. Local universities and colleges host the camps, where participants go through hands-on training,mentoring, teamwork activities and pitching sessions. Overall, IDE Bootcamp builds the entrepreneurial mindset and prepares youth to become future innovators and leaders.",
     imageUrl:
       "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/6ae5c08a-b87a-49db-90b7-a0309ad01b49-tamalsen-dev/assets/images/mark_portrait_circle-17.png",
     bgColor: "bg-primary",
@@ -47,10 +47,9 @@ const testimonials = [
 ];
 
 const socialLinks = [
-  { name: "Messenger", href: "https://m.me/Prantu7" },
-  { name: "LinkedIn", href: "https://www.linkedin.com/in/sentamal/" },
-  { name: "Instagram", href: "https://www.instagram.com/sen_tamal/" },
-  { name: "Github", href: "https://github.com/tamal-sen/" },
+  { name: "Github", href: "https://github.com/Er-Saniya-Tabssum/" },
+  { name: "LinkedIn", href: "https://www.linkedin.com/in/saniya-tabssum/" },
+  { name: "LeetCode", href: "https://leetcode.com/u/saniya_tabssum/" },
 ];
 
 interface TestimonialCardProps {
@@ -110,18 +109,18 @@ export default function ContactTestimonials() {
         <div className="grid lg:grid-cols-12 gap-16 items-start">
           <div className="lg:col-span-4">
             <h2 className="text-4xl font-bold font-display text-text-primary">
-              Available for select freelance opportunities
+              Excited for Opportunities..
             </h2>
             <p className="mt-4 text-text-secondary font-body text-lg">
               Have an exciting project you need help with?
               <br />
-              Send me an email or contact me via instant message!
+              Send me an email!!
             </p>
             <a
-              href="mailto:tamal@tamalsen.dev"
+              href="mailto:eng.saniyatabssum@gmail.com"
               className="block mt-8 text-xl md:text-2xl font-mono text-primary hover:text-accent-purple-dark transition-colors"
             >
-              tamal@tamalsen.dev
+              eng.saniyatabssum@gmail.com
             </a>
             <div className="mt-8 flex flex-col items-start space-y-2">
               {socialLinks.map((link) => (
@@ -137,15 +136,9 @@ export default function ContactTestimonials() {
               ))}
             </div>
           </div>
-          <div className="lg:col-span-8">
-            <div className="grid md:grid-cols-2 gap-8 items-start">
-              <div>
-                <TestimonialCard {...testimonials[0]} />
-              </div>
-              <div className="flex flex-col gap-8">
-                <TestimonialCard {...testimonials[1]} />
-                <TestimonialCard {...testimonials[2]} />
-              </div>
+          <div className="lg:col-span-8 flex justify-center items-center">
+            <div className="w-full flex justify-center">
+              <TestimonialCard {...testimonials[0]} />
             </div>
           </div>
         </div>

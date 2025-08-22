@@ -1,3 +1,42 @@
+
+# Saniya Tabssum – Creative Portfolio
+
+Welcome to my personal portfolio! 🚀
+
+## About Me
+
+Hi, I'm Saniya Tabssum—a passionate developer, AI enthusiast, and creative problem solver. I thrive on building innovative solutions that blend technology and imagination. My journey spans web development, machine learning, and automation, with a love for turning ideas into impactful products.
+
+- 🏆 Winner of IDE Bootcamp (AICTE & MIC)
+- 💡 Creator of AI Podcast Clipper, Vibe, PrepGenie, and more
+- 🧠 Skilled in Next.js, React, Python, TypeScript, MongoDB, and modern web tech
+- 🌱 Always learning, always building
+
+I believe in the power of code to change lives, and I enjoy collaborating with teams and clients to bring visions to reality. Whether it's a SaaS platform, a chatbot, or a data-driven app, I approach every project with curiosity and creativity.
+
+## Projects
+See the Projects section for details on my work, including:
+- AI Podcast Clipper
+- Vibe
+- PrepGenie
+- Sangam Frontend
+- DeepTruth
+- More...
+
+## Contact
+Feel free to reach out for freelance opportunities, collaborations, or just to say hi!
+
+- Email: eng.saniyatabssum@gmail.com
+- LinkedIn: [Saniya Tabssum](https://www.linkedin.com/in/saniya-tabssum)
+- GitHub: [Er-Saniya-Tabssum](https://github.com/Er-Saniya-Tabssum)
+
+---
+
+> "Creativity is intelligence having fun." – Albert Einstein
+
+Thanks for visiting my portfolio!
+
+---
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started

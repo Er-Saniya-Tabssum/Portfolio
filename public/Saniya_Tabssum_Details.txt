@@ -1,0 +1,60 @@
+Candidate Profile – Saniya Tabssum
+
+Email: eng.saniyatabssum@gmail.com |  Location:
+Sikar, Rajasthan LinkedIn:
+https://www.linkedin.com/in/saniya-tabssum-8b049a284/ GitHub:
+https://github.com/Er-Saniya-Tabssum LeetCode:
+https://leetcode.com/u/saniya_tabssum/
+
+Education - B.Tech – Computer Science & Engineering Mody University
+Science and Technology, Sikar Aug 2023 – Present | CGPA: 7.39 - 10+2
+(Senior Secondary) SSB Sr. Sec. School, Pali, Rajasthan 2019 – 2021 |
+95.20%
+
+Skills - Languages: C, C++, Python, HTML, JavaScript, TypeScript -
+Frameworks: ReactJS, NodeJS, ExpressJS, FastAPI, Spring Boot -
+Libraries: PyAudio, Speech_Recognition, PyWhatKit, Matplotlib -
+Databases: MySQL, MongoDB - Tools & Platforms: VS Code, Linux, Thonny,
+Git, GitHub
+
+Experience AI/ML Intern – Edunet Foundation (July 2025 – Aug 2025) -
+Worked on EV Vehicle/Charging Demand Prediction using Python,
+Scikit-learn, TensorFlow (LSTM). - Applied data preprocessing,
+visualization, and ML techniques for time-series forecasting. - Gained
+practical exposure to AI/ML in sustainable energy.
+
+Projects DeepTruth | GitHub:
+https://github.com/Er-Saniya-Tabssum/DeepTruth - AI-powered platform for
+detecting AI-generated content, face swaps, and image tracking. - 1st
+position at Innovation, Design & Entrepreneurship Bootcamp 2025 Phase II
+(CT Group of Institutes, Jalandhar). - Tech Stack: Python, JavaScript,
+HTML, CSS, OpenCV, TensorFlow, PyTorch, NumPy, Flask.
+
+AI Podcast Clipper SaaS | GitHub:
+https://github.com/Er-Saniya-Tabssum/Podcast-Clipper - SaaS tool
+converting full podcasts into viral short clips for TikTok/YouTube
+Shorts. - Features: AI transcription (WhisperX), viral moment detection
+(Gemini 2.5 Pro), speaker recognition (LR-ASD), auto-subtitles, GPU
+rendering (FFMPEG). - Tech Stack: TypeScript, Python, JavaScript,
+Next.js, FastAPI, TailwindCSS, Shadcn UI, WhisperX, FFMPEG, AWS S3,
+Inngest, Stripe.
+
+Certifications - AZ101: Master C++ for Data Structures & Algorithms
+(AlgoZenith) Certificate:
+https://drive.google.com/file/d/1RqDVbKnA0sxDrKp0ifjc0aBj8Yl-kFDZ/view?usp=sharing -
+Time Complexity Series (AlgoZenith) Certificate:
+https://drive.google.com/file/d/1K8-81KJ1EUabykbTdF6MDj8EAhuPu827/view?usp=sharing -
+Introduction to Python (Infosys) Certificate:
+https://drive.google.com/file/d/1wuJU2jgBr7GKJm2hvF15A4adD-1oIMPa/view?usp=sharing
+
+Honors & Awards - 1st Position at Innovation, Design & Entrepreneurship
+Bootcamp 2025 Phase II (CT Group of Institutes, Jalandhar) in
+collaboration with AICTE & Ministry of Education. Rating: 3.9/5 |
+Ranking: 1st in 5 out of 12 bootcamp centers.
+
+Additional Suggestions 1. Add a Career Objective / Summary – Highlight
+goals in AI/ML, SaaS, and software development. 2. Quantify Achievements
+– Example: Improved accuracy by X%. 3. Include Relevant Coursework – DS,
+Algo, AI/ML, DBMS. 4. Highlight Open Source Contributions and Hackathons
+beyond Bootcamp. 5. Future Roadmap – Generative AI, SaaS product
+development, Deep Learning focus.

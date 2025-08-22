@@ -1,6 +1,6 @@
 import React from "react";
 import { Monitor, Atom } from "lucide-react";
-import { SiFlutter } from "react-icons/si";
+import { FaBrain } from "react-icons/fa";
 
 const CodeSnippet = ({ children }: { children: React.ReactNode }) => (
   <div className="font-mono text-base text-text-secondary/90 leading-relaxed">
@@ -41,9 +41,9 @@ export default function Expertise() {
                 <CodeSnippet>
                   Experienced in both
                   <br />
-                  functional and OOP: Dart,
+                  functional, DSA, DBMS and OOPS:
                   <br />
-                  Python, Java, JavaScript,
+                  Python, Java, C, C++, JavaScript, SQL,
                   <br />
                   TypeScript.
                 </CodeSnippet>
@@ -61,21 +61,19 @@ export default function Expertise() {
                 />
                 <h3 className="text-2xl font-semibold text-text-primary">
                   <span className="inline-block border-b-2 border-cyan-400 pb-1">
-                    Frontend Dev
+                    Mern Stack Dev
                     <br />
-                    React, NextJS
                   </span>
                 </h3>
               </div>
               <div className="mt-2">
                 <CodeSnippet>
-                  Passionate about UI/UX. Over
+                  Passionate about Web Dev. Over
                   <br />
-                  5 years of development
+                  2 years of development experience in React, NextJS, NodeJs,
+                  ExpressJs, MongoDB, Flask API
                   <br />
-                  experience in HTML, CSS, JS,
-                  <br />
-                  React and NextJS frameworks.
+                  and frameworks.
                 </CodeSnippet>
               </div>
             </div>
@@ -85,12 +83,11 @@ export default function Expertise() {
           <div className="p-8 border-t lg:border-t-0">
             <div className="flex flex-col gap-4">
               <div className="flex items-center gap-4">
-                <SiFlutter className="w-9 h-9 text-orange-500 flex-shrink-0" />
+                <FaBrain className="w-9 h-9 text-purple-800 flex-shrink-0" />
                 <h3 className="text-2xl font-semibold text-text-primary">
-                  <span className="inline-block border-b-2 border-orange-500 pb-1">
-                    Flutter Dev
+                  <span className="inline-block border-b-2 border-purple-800 pb-1">
+                    AI/ML Engineer
                     <br />
-                    Android, iOS
                   </span>
                 </h3>
               </div>
@@ -98,13 +95,13 @@ export default function Expertise() {
                 <CodeSnippet>
                   Skilled in developing
                   <br />
-                  hybrid mobile apps and
+                  AI and ML models
                   <br />
-                  cross-platform solutions
+                  for prediction,
                   <br />
-                  using the Flutter
+                  classification, and
                   <br />
-                  framework.
+                  intelligent solutions.
                 </CodeSnippet>
               </div>
             </div>

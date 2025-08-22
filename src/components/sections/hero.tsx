@@ -16,39 +16,64 @@ import { ChevronDown } from "lucide-react";
 
 const logos = [
   {
-    src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/6ae5c08a-b87a-49db-90b7-a0309ad01b49-tamalsen-dev/assets/images/hostinger-logo-27.svg",
-    alt: "Hostinger",
-    href: "https://www.hostinger.com/tutorials/web-developer-portfolio",
+    src: "/HTML5_logo_and_wordmark.svg.png",
+    alt: "HTML",
+    href: "https://developer.mozilla.org/en-US/docs/Web/HTML",
   },
   {
-    src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/6ae5c08a-b87a-49db-90b7-a0309ad01b49-tamalsen-dev/assets/images/upwork-logo-28.svg",
-    alt: "Upwork",
-    href: "https://www.upwork.com/resources/web-developer-portfolio",
+    src: "/images.png",
+    alt: "C",
+    href: "https://en.wikipedia.org/wiki/C_(programming_language)",
   },
   {
-    src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/6ae5c08a-b87a-49db-90b7-a0309ad01b49-tamalsen-dev/assets/images/careerfoundry-logo-29.svg",
-    alt: "CareerFoundry",
-    href: "https://careerfoundry.com/en/blog/web-development/software-engineer-portfolio/",
+    src: "/ISO_C++_Logo.svg.png",
+    alt: "C++",
+    href: "https://isocpp.org/",
   },
   {
-    src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/6ae5c08a-b87a-49db-90b7-a0309ad01b49-tamalsen-dev/assets/images/frontend-mentor-logo-21.svg",
-    alt: "Frontend Mentor",
-    href: "https://www.frontendmentor.io/articles/building-an-effective-frontend-developer-portfolio--7cE8BfMG_",
+    src: "/MongoDB_Logo.svg.png",
+    alt: "MongoDB",
+    href: "https://www.mongodb.com/",
   },
   {
-    src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/6ae5c08a-b87a-49db-90b7-a0309ad01b49-tamalsen-dev/assets/images/WeAreDevelopers-logo-22.svg",
-    alt: "WeAreDevelopers",
-    href: "https://www.wearedevelopers.com/magazine/web-developer-portfolio-examples",
+    src: "/light-js.svg",
+    alt: "JavaScript",
+    href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
   },
   {
-    src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/6ae5c08a-b87a-49db-90b7-a0309ad01b49-tamalsen-dev/assets/images/hostinger-logo-27.svg",
-    alt: "Google Cloud",
-    href: "#",
+    src: "/Nextjs-logo.svg.png",
+    alt: "Next.js",
+    href: "https://nextjs.org/",
   },
   {
-    src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/6ae5c08a-b87a-49db-90b7-a0309ad01b49-tamalsen-dev/assets/images/upwork-logo-28.svg",
-    alt: "Microsoft Azure",
-    href: "#",
+    src: "/Node.js_logo.svg.png",
+    alt: "Node.js",
+    href: "https://nodejs.org/",
+  },
+  {
+    src: "/Python_logo_and_wordmark.svg.png",
+    alt: "Python",
+    href: "https://www.python.org/",
+  },
+  {
+    src: "/React-icon.svg.png",
+    alt: "React",
+    href: "https://react.dev/",
+  },
+  {
+    src: "/sql-database-generic.svg",
+    alt: "SQL",
+    href: "https://www.mysql.com/",
+  },
+  {
+    src: "/tailwind.svg",
+    alt: "Tailwind CSS",
+    href: "https://tailwindcss.com/",
+  },
+  {
+    src: "/Typescript_logo_2020.svg",
+    alt: "TypeScript",
+    href: "https://www.typescriptlang.org/",
   },
 ];
 
@@ -98,10 +123,10 @@ export default function HeroSection() {
       <Header />
       <div className="container relative z-20 flex flex-1 flex-col justify-center text-center pt-32 pb-16">
         <h1 className="font-display text-[72px] leading-none font-black tracking-tighter text-text-primary uppercase ">
-          Tamal Sen
+          Saniya Tabssum
         </h1>
         <h5 className="font-hero-subtitle mt-6 text-lg tracking-wider uppercase text-text-secondary">
-          Software Engineer, Front end & App Developer.
+          Software Engineer · AI/ML Engineer · Full-Stack Developer
         </h5>
       </div>
       {/* Gradient overlay at bottom for smooth transition */}
@@ -114,8 +139,8 @@ export default function HeroSection() {
 
       <div className="container relative z-20 w-full pb-16">
         <div className="flex flex-col items-center">
-          <p className="text-sm uppercase tracking-wider text-text-secondary mb-8">
-            As featured in
+          <p className="text-2xl uppercase tracking-wider text-text-secondary mb-8">
+            Skills
           </p>
           <Carousel
             setApi={setApi}
@@ -137,13 +162,28 @@ export default function HeroSection() {
                     rel="noopener noreferrer"
                     className="flex justify-center items-center h-full p-4"
                   >
-                    <Image
-                      src={logo.src}
-                      alt={logo.alt}
-                      width={130}
-                      height={30}
-                      className="object-contain transition-opacity duration-300 opacity-60 hover:opacity-100"
-                    />
+                    <div
+                      style={{
+                        height: 48,
+                        width: 130,
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                      }}
+                    >
+                      <Image
+                        src={logo.src}
+                        alt={logo.alt}
+                        width={130}
+                        height={48}
+                        style={{
+                          objectFit: "contain",
+                          height: "100%",
+                          width: "100%",
+                        }}
+                        className="transition-opacity duration-300 opacity-60 hover:opacity-100"
+                      />
+                    </div>
                   </a>
                 </CarouselItem>
               ))}
